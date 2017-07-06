@@ -26,7 +26,18 @@ input:focus {
 
 .error {
   border-color: red;
-  /* Add Animation HERE */
+  animation: jigglez .7s;
 }
 
 /* define @keyframes HERE */
+@keyframes jigglez {
+  0%, 100% {
+    transform: translateY(0) rotate(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateY(-8px) rotate(-2deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}

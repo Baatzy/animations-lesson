@@ -19,9 +19,10 @@
   height: 100%;
   background: #E20D63;
   border-radius: 50%;
-  /* HERE */
+  transition: all .6s ease-out;
+  transform: scale(0);
 }
 
 .circle:hover:before {
-  /* HERE */
+  transform: scale(1);
 }
